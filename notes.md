@@ -82,7 +82,7 @@ Sources - all thhe files
 - U - Update - Put
 - D - Delete - Delete
 
-# HTTP MDN Codes
+# HTTP Status Codes
 
 - 100 - Informational responses
 - 200 - Successful responses
