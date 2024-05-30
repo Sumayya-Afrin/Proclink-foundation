@@ -136,17 +136,19 @@ Chrome Engine - V8
 7. Bigint
 8. Undefined
 
-> s = null  
-> null  
-> typeof(s)  
-> 'object'  
-> k  
-> typeof(k)  
-> 'undefined'  
-> m=undefined  
-> undefined  
-> typeof(m)  
-> 'undefined'
+```js
+s = null;
+null;
+typeof s;
+("object");
+k;
+typeof k;
+("undefined");
+m = undefined;
+undefined;
+typeof m;
+("undefined");
+```
 
 - objects are key values
 - type of null is object
@@ -167,3 +169,107 @@ Chrome Engine - V8
 3. SVG graphics are scalable, and do not lose any quality if they are zoomed or resized.
 4. SVG is supported by all major browsers.
 5. Based on mathematical formulas
+
+# Scope
+
+Lifetime of a variable
+
+- Tells the area where it is alive otherwise it is dead
+- only can access within specified area
+
+> Not defined is a error - not declared at all
+
+> Undefined is a value - declared & value is not assigned
+
+# Typecasting & Cohesion
+
+# Implicit cohesion
+
+- JS automatically typecastes based on priority
+  var s1 = 3;  
+  var s2 = "6";  
+  console.log(s1 + s2); //36  
+  console.log(s1 - s2); //-3
+
+# Explicit Cohesion
+
+- User can explicitly change the data type
+
+```js
+var s1 = 3;
+var s2 = "6";
+console.log(s1 +parseInt(s2)); //9
+console.log(s1+ +s2); //9
+
+ 4 * "5a"
+output: NaN
+
+typeof(NaN)
+output: number
+
+[1,2,3]+"abc"
+output: 1,2,3abc
+
+```
+
+# Which is faster == or === ?
+
+- == allows typecasting/cohesion
+  - converts the data types
+    > _Note_ :except + operator all other data types will be converted to string
+- === does not allow typecasting /cohesion
+  - compares directly
+
+# Types of functions
+
+- Normal function
+- Arrow function
+- Anonymous function
+- --> Instead of inline we can add external js files using src and script tag.
+
+# Normal function
+
+```js
+//function declaration/definition
+//n-parameter
+//Function body{}
+function double(n) {
+  return n * 2;
+}
+
+//function call
+//arguement - 10
+console.log(double(10));
+```
+
+# Two ways of existing the functions
+
+- using return
+- completes all the statements
+
+# Arrow function
+
+```js
+const double = (n) => {
+  return n * 2;
+};
+//remove curly braces and return statement
+const double = (n) => n * 2;
+```
+
+- DRY = Don't repeat yourself --> Thumb rule
+
+# Why we are using functions?
+
+- code dry (saves time energy)
+- Readability
+- Modularity
+- change in one place everything is changed
+
+# 5 Pillars of Code Quality
+
+1. Readability - 75% - so the other developers can understand in order to apply changes.
+2. Maintainability - ❌code debt - want to do tmrw but that tmrw will never come
+3. Extensibility - extending
+4. Testability - writing the easier test cases
+5. Performance - quality is maintained

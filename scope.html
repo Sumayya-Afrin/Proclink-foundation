@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //let & const-block scope
+      {
+        var x1 = 10;
+        var x2 = 20;
+      }
+      //var z2;
+      //console.log(z2); //undefined
+      console.log(x1);
+      console.log(x2);
+
+      function fun() {
+        var t1 = 10;
+        let t2 = 20;
+      }
+
+      //console.log(t1); //not defined(error)
+      //console.log(t2); // not define(error)
+
+      function drivingTest(age) {
+        if (age > 18) {
+          let msg = "eligible";
+        } else {
+          let msg = "not eligible";
+        }
+
+        console.log(msg);
+        drivingTest(20);
+      }
+      function drivingTest1(age) {
+        let msg;
+        if (age > 18) {
+          msg = "eligible";
+        } else {
+          msg = "not eligible";
+        }
+
+        console.log(msg);
+        drivingTest1(20);
+
+        var s1 = 3;
+        var s2 = "6";
+        console.log(s1 + s2); //36
+        console.log(s1 - s2); //-3
+      }
+    </script>
+  </body>
+</html>
