@@ -131,10 +131,9 @@ Chrome Engine - V8
 2. Number
 3. String
 4. Object
-5. Null
-6. Symbol
-7. Bigint
-8. Undefined
+5. Symbol
+6. Bigint
+7. Undefined
 
 ```js
 s = null;
@@ -181,17 +180,20 @@ Lifetime of a variable
 
 > Undefined is a value - declared & value is not assigned
 
-# Typecasting & Cohesion
+# Typecasting & Coersion
 
-# Implicit cohesion
+# Implicit coersion
 
 - JS automatically typecastes based on priority
-  var s1 = 3;  
-  var s2 = "6";  
-  console.log(s1 + s2); //36  
-  console.log(s1 - s2); //-3
 
-# Explicit Cohesion
+```js
+var s1 = 3;
+var s2 = "6";
+console.log(s1 + s2); //36
+console.log(s1 - s2); //-3
+```
+
+# Explicit Coersion
 
 - User can explicitly change the data type
 
@@ -259,7 +261,7 @@ const double = (n) => n * 2;
 
 - DRY = Don't repeat yourself --> Thumb rule
 
-# Why we are using functions?
+# Why are we using functions?
 
 - code dry (saves time energy)
 - Readability
@@ -273,3 +275,19 @@ const double = (n) => n * 2;
 3. Extensibility - extending
 4. Testability - writing the easier test cases
 5. Performance - quality is maintained
+
+# Copy by Value
+
+```js
+var q1 = [100, 200];
+var q3 = [...q1]; //copy by value by spread operator
+q1.push(100);
+//output:100,200,100--> q1
+//q3-->100,200
+```
+
+```js
+var q1 = [100, 200];
+var q3 = [60, ...q1, 90, 40];
+//output: 60 , 100,200,90,40
+```
