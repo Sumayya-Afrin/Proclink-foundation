@@ -1,4 +1,4 @@
-function printHello(name) {
+function printHellowithName(name) {
   return "Hello ," + name;
 }
 //Tried how function works
