@@ -127,3 +127,10 @@ for (let n = 0; n <= movies.length; n++) {
 
   sumAvg = 0;
 }
+
+function addNumbers(num1, num2) {
+  return num1 + num2;
+}
+console.log(addNumbers(3, 4));
+// Trying the stash
+function sumOfNum(num3, num4) {}
