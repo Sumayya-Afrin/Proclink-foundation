@@ -103,6 +103,8 @@ Chrome Engine - V8
 1. windows+. ---> Emojis and symbols
 2. ctrl+/ ---> Comment
 3. ctrl+, ---> settings
+4. ctrl+spcae-->autocomplete
+5. ctrl+shift+p-->change theme (command palette)
 
 - lang , eng, charset - attributes
 - UTF - supports emojis/symbols.
@@ -227,6 +229,7 @@ output: 1,2,3abc
 - Normal function
 - Arrow function
 - Anonymous function
+- IIFE
 - --> Instead of inline we can add external js files using src and script tag.
 
 # Normal function
