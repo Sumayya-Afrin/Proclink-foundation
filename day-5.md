@@ -39,7 +39,7 @@ Agile - 12 yearly - 2 sprints in a months
 
 - team or individual performance during the entire period of sprint.
 
-Scrum - agile management tool , imlementation of agile
+Scrum - agile management tool , imlementation of agile  
 kanban - tool to manage the scrum , who is assigned to what ticket (task management tool)
 
 Estimates - story points

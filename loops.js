@@ -133,4 +133,6 @@ function addNumbers(num1, num2) {
 }
 console.log(addNumbers(3, 4));
 // Trying the stash
-function sumOfNum(num3, num4) {}
+function sumOfNum(num3, num4) {
+  return num3 + num4;
+}
