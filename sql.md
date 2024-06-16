@@ -312,6 +312,8 @@ where year%2==0
 
 ```
 
+![alt text](image-45.png)
+
 # Exercise 10— Tasks
 
 1. Find the longest time that an employee has been at the studio
@@ -414,6 +416,9 @@ VALUES (4, 8.7 ,340000000 , 270000000);
 
 ![alt text](image-30.png)
 
+# Exercise 14 — Tasks
+
+```sql
 select year
 from movies
 where id=3
@@ -426,17 +431,18 @@ UPDATE Movies
 SET Title = "Toy Story 3",
 Director = "Lee Unkrich"
 WHERE id=11;
+```
 
 1. The director for A Bug's Life is incorrect, it was actually directed by John Lasseter
 
 ```sql
 select *
 from movies
-where id=3
+where id=2
 
 UPDATE movies
-SET year= 1999
- where id=3
+SET director= 'John Lasseter'
+ where id=2
 
 ```
 
@@ -468,6 +474,25 @@ WHERE id=11;
 ```
 
 ![alt text](image-31.png)
+
+# Exercise 15 — Tasks
+
+1. This database is getting too big, lets remove all movies that were released before 2005.
+
+```sql
+Delete from movies
+where year<2005
+```
+
+2. Andrew Stanton has also left the studio, so please remove all movies directed by him.
+
+```sql
+Delete from movies
+where director="Andrew Stanton"
+
+```
+
+![alt text](image-47.png)
 
 # Exercise 16 — Tasks
 
