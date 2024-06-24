@@ -19,7 +19,9 @@
 - Google drive
 - Drop box
 
-  ![alt text](image-23.png)
+# Normal Forms
+
+![alt text](image-23.png)
 
 ![alt text](image-24.png)
 
@@ -82,3 +84,8 @@ LIMIT count OFFSET COUNT;
 ![alt text](image-49.png)
 ![alt text](image-50.png)
 ![alt text](image-51.png)
+
+# ER
+
+- Entity : a person or a object
+- attributes : columns , describes the entity

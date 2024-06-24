@@ -97,7 +97,7 @@ const marks = [10, 20, 30]; //✅
 --> for readability
 
 ```js
-const pivalue = 3.14;
+const pivalue = 3.14;❌
 const PI_VALUE = 3.14;
 ```
 
